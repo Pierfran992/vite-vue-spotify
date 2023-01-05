@@ -23,7 +23,7 @@ export default {
 @use "../styles/partials/variables.scss";
 
 section {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 300px);
     height: 100%;
 }
 </style>    

@@ -15,12 +15,11 @@ export default {
 @use "../../styles/partials/variables.scss";
 
 .top_bar {
-    background-color: rgba($color: #000000, $alpha: 0.9);
-    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    width: calc(100vw - 300px);
     height: 80px;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
 }
 </style>

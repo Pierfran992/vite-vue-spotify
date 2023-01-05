@@ -15,7 +15,7 @@ export default {
 @use "../styles/partials/variables.scss";
 
 section {
-    width: 200px;
+    width: 300px;
     height: 100%;
     background-color: #000000;
 }
