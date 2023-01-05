@@ -1,10 +1,12 @@
 <script>
 import BarLeft from './BarLeft.vue';
+import ShowroomSong from './ShowroomSong.vue';
 
 export default {
     name: "AppBody",
     components: {
         BarLeft,
+        ShowroomSong,
     }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
     <section class="ctn_body_app">
         <BarLeft />
+        <ShowroomSong />
     </section>
 </template>
 
