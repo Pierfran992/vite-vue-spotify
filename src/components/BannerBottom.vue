@@ -34,9 +34,13 @@ export default {
 
     .ctn_text {
         color: $primaryColor;
-        font-size: 12px;
+
+        h5 {
+            font-size: 13px;
+        }
 
         p {
+            font-size: 12px;
             font-weight: 600;
             margin-top: 10px;
         }
