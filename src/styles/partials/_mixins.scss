@@ -15,6 +15,13 @@
     align-items: center;
 }
 
+// creo una mixin per distanziare gli oggetti messi in colonna con between
+@mixin column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 // centralizzate le proprietà dei bottoni
 @mixin button() {
     color: $thirdColor;

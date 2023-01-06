@@ -9,11 +9,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { faSquareJs } from '@fortawesome/free-brands-svg-icons'
-import { faVuejs } from '@fortawesome/free-brands-svg-icons'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 /* add icons to the library */
-library.add(faUserSecret, faSquareJs, faVuejs)
+library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
