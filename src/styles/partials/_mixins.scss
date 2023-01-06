@@ -1,0 +1,29 @@
+// richiamo il file variables
+@use './variables.scss' as *;
+
+// creo una mixin generale per centrare gli elementi in flex
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//  creo una mixin per distanziare gli elementi con between
+@mixin between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// centralizzate le proprietà dei bottoni
+@mixin button() {
+    color: $thirdColor;
+    background-color: $primaryColor;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
