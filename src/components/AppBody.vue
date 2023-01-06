@@ -19,8 +19,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/mixins.scss";
-@use "../styles/partials/variables.scss";
+@use "../styles/partials/mixins.scss" as *;
+@use "../styles/partials/variables.scss" as *;
 
 .ctn_body_app {
     width: 100vw;

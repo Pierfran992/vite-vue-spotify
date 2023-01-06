@@ -13,11 +13,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../../styles/partials/mixins.scss";
-@use "../../styles/partials/variables.scss";
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
 
 section {
-    background-color: #121212;
+    background-color: $bgListSong;
     width: 100%;
     height: 100%;
     padding-top: 100px;

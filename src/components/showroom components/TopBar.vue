@@ -11,11 +11,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../../styles/partials/mixins.scss";
-@use "../../styles/partials/variables.scss";
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
 
 .top_bar {
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgba($color: $thirdColor, $alpha: 0.5);
     width: calc(100vw - 300px);
     height: 80px;
     position: fixed;
