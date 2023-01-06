@@ -184,7 +184,7 @@ section {
         text-decoration: none;
 
         &:hover {
-            color: $primaryColor;
+            text-decoration: underline;
             cursor: pointer;
         }
     }

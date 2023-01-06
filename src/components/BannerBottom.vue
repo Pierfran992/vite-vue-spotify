@@ -44,6 +44,10 @@ export default {
 
     .btn {
         @include button();
+
+        &:hover {
+            scale: 1.1;
+        }
     }
 }
 </style>
