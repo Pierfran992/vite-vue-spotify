@@ -12,12 +12,16 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
+
 
 
 
 
 /* add icons to the library */
-library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook)
+library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook, faPlus, faHeart)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

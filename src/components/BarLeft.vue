@@ -31,6 +31,25 @@ export default {
                     </li>
                 </ul>
             </div>
+
+            <!-- menu playlist e brani preferiti -->
+            <div class="ctn_playlist_user">
+                <ul>
+                    <li>
+                        <div class="add_playlist">
+                            <font-awesome-icon icon="fa-solid fa-plus" />
+                        </div>
+                        <a href="#">Crea playlist</a>
+                    </li>
+
+                    <li>
+                        <div class="favourite_song">
+                            <font-awesome-icon icon="fa-solid fa-heart" />
+                        </div>
+                        <a href="#">Brani che ti piacciono</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- container contenente la lista dei link per accedere alla politica sui cookie e alla politica sulla privacy -->
@@ -85,13 +104,65 @@ section {
         }
 
         .icon_menu {
-            font-size: 20px;
+            font-size: 25px;
             margin-right: 10px;
         }
 
         a {
             color: $secondaryColor;
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}
+
+// regole css della lista delle playlist
+.ctn_playlist_user {
+    margin-top: 25px;
+
+    li {
+        list-style: none;
+        cursor: pointer;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+
+            a,
+            .favourite_song {
+                color: $primaryColor;
+            }
+
+            .add_playlist {
+                background-color: $primaryColor;
+            }
+        }
+
+        .add_playlist,
+        .favourite_song {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .add_playlist {
+            color: $thirdColor;
+            background-color: $secondaryColor;
+        }
+
+        .favourite_song {
+            color: $secondaryColor;
+            background: $bgBannerBottom;
+        }
+
+        a {
+            color: $secondaryColor;
+            font-size: 13px;
             font-weight: 600;
             text-decoration: none;
         }
