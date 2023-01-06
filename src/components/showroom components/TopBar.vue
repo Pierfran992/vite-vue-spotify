@@ -16,7 +16,7 @@ export default {
             </div>
         </div>
 
-        <div>
+        <div class="ctn_menu">
             <!-- menu di navigazione della top bar -->
             <div class="menu">
                 <ul>
@@ -30,6 +30,15 @@ export default {
                         Download
                     </li>
                 </ul>
+            </div>
+
+            <div class="sign_in">
+                Isciviti
+            </div>
+
+            <!-- bottone menu per accedere -->
+            <div class="btn">
+                Accedi
             </div>
         </div>
     </div>
@@ -76,28 +85,57 @@ export default {
     }
 }
 
-// regole css del menu di navigazione
-.menu {
-    height: 25px;
-    padding-right: 20px;
-    line-height: 25px;
-    border-right: solid 1px $secondaryColor;
+.ctn_menu {
+    display: flex;
+    align-items: center;
 
-    ul {
-        display: flex;
-        gap: 20px;
+    // regole css del menu di navigazione
+    .menu {
+        height: 25px;
+        line-height: 25px;
+        padding-right: 25px;
+        margin-right: 25px;
+        border-right: solid 1px $secondaryColor;
 
-        li {
-            color: $secondaryColor;
-            font-weight: 600;
-            font-size: 14px;
-            list-style: none;
-            cursor: pointer;
+        ul {
+            display: flex;
+            gap: 20px;
 
-            &:hover {
-                color: $primaryColor;
-                scale: 1.05;
+            li {
+                color: $secondaryColor;
+                font-weight: 600;
+                font-size: 14px;
+                list-style: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primaryColor;
+                    scale: 1.05;
+                }
             }
+        }
+    }
+
+    // regole del bottone per isciversi a spotify
+    .sign_in {
+        color: $secondaryColor;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 25px;
+
+        &:hover {
+            color: $primaryColor;
+            scale: 1.05;
+        }
+    }
+
+    // regole del bottone per accedere a spotify
+    .btn {
+        @include button();
+
+        &:hover {
+            scale: 1.1;
         }
     }
 }
