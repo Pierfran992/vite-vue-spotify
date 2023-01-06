@@ -6,7 +6,9 @@ export default {
 
 <template>
     <section>
-
+        <div class="slot_logo">
+            <img src="../assets/img/logospotify.svg" alt="logo spotify" id="logo">
+        </div>
     </section>
 </template>
 
@@ -15,8 +17,14 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 section {
+    background-color: $thirdColor;
     width: 300px;
     height: 100%;
-    background-color: $thirdColor;
+    padding: 20px;
+}
+
+.slot_logo {
+    width: 150px;
+    height: 60px;
 }
 </style>
