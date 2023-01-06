@@ -14,14 +14,13 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-
-
-
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook, faPlus, faHeart)
+library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook, faPlus, faHeart, faAngleRight, faAngleLeft,)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
