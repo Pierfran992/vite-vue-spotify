@@ -22,9 +22,10 @@ export default {
     <section>
         <!-- contenitore delle canzoni -->
         <div class="container">
+            <!-- titolo playlist -->
+            <h2>Spotify Playlists</h2>
             <div class="ctn_song">
-                <!-- componente che genererà le card per le canzioni -->
-                <h2>Spotify Playlists</h2>
+                <!-- componente che genererà le card per le canzoni -->
                 <CardGenerator />
             </div>
             <!-- footer -->
@@ -53,13 +54,15 @@ section {
     padding-bottom: 60px;
     overflow-y: auto;
 
+    h2 {
+        color: $primaryColor;
+        margin-bottom: 20px;
+    }
+
     .ctn_song {
         @include start();
         flex-wrap: wrap;
-
-        h2 {
-            color: $primaryColor;
-        }
+        gap: 30px 10px;
     }
 
 }
