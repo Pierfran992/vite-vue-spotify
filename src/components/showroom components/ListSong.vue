@@ -26,7 +26,7 @@ export default {
             <h2>Spotify Playlists</h2>
             <div class="ctn_song">
                 <!-- componente che genererà le card per le canzoni -->
-                <CardGenerator />
+                <CardGenerator v-for="(obj, index) in store.songList" :key="obj.index" :info="obj" />
             </div>
             <!-- footer -->
             <footer>
@@ -44,7 +44,8 @@ section {
     background-color: $bgListSong;
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding: 100px;
+    overflow-y: auto;
 }
 
 .container {
@@ -52,7 +53,6 @@ section {
     height: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
-    overflow-y: auto;
 
     h2 {
         color: $primaryColor;
