@@ -1,14 +1,28 @@
 <script>
+import CardGenerator from '../list song components/CardGenerator.vue';
+import AppFooter from '../list song components/AppFooter.vue';
+
 export default {
     name: "ListSong",
+
+    components: {
+        CardGenerator,
+        AppFooter,
+    }
 }
 </script>
 
 <template>
     <section>
+        <!-- contenitore delle canzoni -->
         <div class="ctn_song">
-
+            <!-- componente che genererà le card per le canzioni -->
+            <CardGenerator />
         </div>
+        <!-- footer -->
+        <footer>
+            <AppFooter />
+        </footer>
     </section>
 </template>
 
