@@ -15,6 +15,20 @@
     align-items: center;
 }
 
+//  creo una mixin per distanziare gli elementi con start
+@mixin start() {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+}
+
+//  creo una mixin per distanziare gli elementi con end
+@mixin end() {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 // creo una mixin per distanziare gli oggetti messi in colonna con between
 @mixin column() {
     display: flex;
