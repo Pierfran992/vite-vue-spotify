@@ -148,10 +148,10 @@ export default {
 
 .bottom_footer {
     @include between();
+    margin: 20px 0 50px 0;
 
     // grafica menu link info privacy e cookie
     .link_info {
-        margin-top: 20px;
 
         ul {
             @include start();
