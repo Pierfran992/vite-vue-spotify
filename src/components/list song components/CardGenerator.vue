@@ -9,11 +9,12 @@ export default {
     <!-- creo la struttura della card -->
     <div class="gen_card">
         <div class="slot_img">
-
+            <img :src="info.images.coverart" :alt="info.title">
         </div>
-        <h4>hahahhahaha</h4>
-        <p>hahah ajshdjada dakjhdjksada jkadhkajshda ahdaksjdhjsad</p>
+        <h4>{{ info.title }}</h4>
+        <p>{{ info.subtitle }}</p>
     </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -22,13 +23,11 @@ export default {
 
 .gen_card {
     background-color: $cardColor;
-    width: calc((100% - 90px) / 9);
-    height: 250px;
+    width: calc((100% - 180px) / 9);
     padding: 10px;
     border-radius: 10px;
 
     .slot_img {
-        background-color: black;
         width: 100%;
         height: 100px;
         margin-bottom: 10px;
