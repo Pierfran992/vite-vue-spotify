@@ -59,12 +59,17 @@ export default {
             </div>
         </div>
         <!-- div contenente i link per accedere alle info sulla privacy e sui cookie -->
-        <div class="link_info">
-            <ul>
-                <li v-for="(elem, index) in store.info" :key="index">
-                    <a href="#">{{ elem }}</a>
-                </li>
-            </ul>
+        <div class="bottom_footer">
+            <div class="link_info">
+                <ul>
+                    <li v-for="(elem, index) in store.info" :key="index">
+                        <a href="#">{{ elem }}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span>&#169; 2023 Spotify AB</span>
+            </div>
         </div>
     </div>
 </template>
@@ -123,13 +128,13 @@ export default {
         gap: 20px;
 
         .icon_social {
-            background-color: $secondaryColor;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
+            background-color: $bgIconSocial;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
             text-align: center;
             border-radius: 50%;
-            font-size: 20px;
+            font-size: 16px;
             cursor: pointer;
 
             a {
@@ -140,31 +145,43 @@ export default {
     }
 }
 
-// grafica menu link info privacy e cookie
-.link_info {
-    margin-top: 20px;
 
-    ul {
-        @include start();
-        gap: 20px;
+.bottom_footer {
+    @include between();
 
-        li {
-            list-style: none;
-            margin-bottom: 5px;
+    // grafica menu link info privacy e cookie
+    .link_info {
+        margin-top: 20px;
 
-            a {
-                color: $secondaryColor;
-                text-decoration: none;
-                font-size: 13px;
-                font-weight: 600;
+        ul {
+            @include start();
+            gap: 20px;
 
-                &:hover {
-                    text-decoration: underline;
-                    color: $primaryColor;
+            li {
+                list-style: none;
+                margin-bottom: 5px;
+
+                a {
+                    color: $secondaryColor;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 600;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: $primaryColor;
+                    }
                 }
             }
         }
+
     }
 
+    // grafica copyright
+    .copyright {
+        color: $secondaryColor;
+        font-size: 13px;
+        font-weight: 600;
+    }
 }
 </style>
