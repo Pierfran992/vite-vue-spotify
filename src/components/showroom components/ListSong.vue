@@ -18,11 +18,11 @@ export default {
         <div class="ctn_song">
             <!-- componente che genererà le card per le canzioni -->
             <CardGenerator />
+            <!-- footer -->
+            <footer>
+                <AppFooter />
+            </footer>
         </div>
-        <!-- footer -->
-        <footer>
-            <AppFooter />
-        </footer>
     </section>
 </template>
 

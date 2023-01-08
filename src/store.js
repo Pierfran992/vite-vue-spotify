@@ -8,7 +8,7 @@ export const store = reactive({
         "For the Record"
     ],
 
-    Community: [
+    community: [
         "Per artisti",
         "Sviluppatori",
         "Pubblicità",

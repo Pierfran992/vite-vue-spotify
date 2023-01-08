@@ -16,11 +16,14 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook, faPlus, faHeart, faAngleRight, faAngleLeft,)
+library.add(faUserSecret, faHouse, faMagnifyingGlass, faBook, faPlus, faHeart, faAngleRight, faAngleLeft, faSquareFacebook, faTwitter, faInstagram)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
